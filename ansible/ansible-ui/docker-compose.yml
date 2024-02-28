@@ -1,0 +1,15 @@
+services:
+  semaphore:
+    ports:
+      - 3000:3000
+    image: semaphoreui/semaphore:v2.9.45
+    environment:
+      SEMAPHORE_DB_DIALECT: bolt
+      SEMAPHORE_ADMIN_PASSWORD: changeme
+      SEMAPHORE_ADMIN_NAME: admin
+      SEMAPHORE_ADMIN_EMAIL: admin@localhost
+      SEMAPHORE_ADMIN: admin
+      TZ: Europe/Berlin
+    volumes:
+      - C:\Users\PzTJ\Downloads\DockerDat\etc:/etc/semaphore # config.json location
+      - C:\Users\PzTJ\Downloads\DockerDat\var:/var/lib/semaphore # da tabase.boltdb location (Not required if using mysql or postgres)

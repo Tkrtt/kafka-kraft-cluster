@@ -4,7 +4,7 @@ services:
   elasticsearch:
     image: elasticsearch:8.12.2
     container_name: elasticsearch
-    mem_limit: 4g
+    mem_limit: 2g
     restart: always
     environment:
       - discovery.type=single-node
