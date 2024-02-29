@@ -1,9 +1,4 @@
-FROM eclipse-temurin:11.0.22_7-jdk-alpine
-
-RUN apk --no-cache add curl bash
-         
-ENV KAFKA_VERSION 3.6.1
-ENV SCALA_VERSION 2.13
+docker run --rm -it --name
 
 RUN mkdir -p /download && \
     curl "https://archive.apache.org/dist/kafka/${KAFKA_VERSION}/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz" \
