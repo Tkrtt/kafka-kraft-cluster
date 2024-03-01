@@ -11,5 +11,5 @@ services:
       SEMAPHORE_ADMIN: admin
       TZ: Europe/Berlin
     volumes:
-      - C:\Users\PzTJ\Downloads\DockerDat\etc:/etc/semaphore # config.json location
-      - C:\Users\PzTJ\Downloads\DockerDat\var:/var/lib/semaphore # da tabase.boltdb location (Not required if using mysql or postgres)
+      - config:/etc/semaphore # config.json location
+      #- C:\Users\PzTJ\Downloads\DockerDat\var:/var/lib/semaphore # da tabase.boltdb location (Not required if using mysql or postgres)
