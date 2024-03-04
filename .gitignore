@@ -1,3 +1,9 @@
 .DS_Store
 Thumbs.db
 *.rpm
+.env
+.env.dev
+.env.staging
+.env.prod
+*.log
+*.dll
