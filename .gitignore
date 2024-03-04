@@ -1,1 +1,3 @@
-./rhel-rpm/download
+.DS_Store
+Thumbs.db
+*.rpm
