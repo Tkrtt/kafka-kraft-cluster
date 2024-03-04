@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  oracle-linux:
+    image: oraclelinux:8.7
+    volumes:
+      - ./download:/home
+      - ./scripts:/svr
+    command: bash -c "/svr/dnf-plugin.sh"
